@@ -899,6 +899,10 @@ function processResponse(response, name, op, openapi, options) {
 function processPaths(container, containerName, options, requestBodyCache, openapi) {
     for (let p in container) {
         let path = container[p];
+        if (path && (path['x-availability']) && (typeof path['x-trace'] === 'string')) {
+            path.trace = path['x-availability'];
+            delete path['x-availability'];
+        }
         // path.$ref is external only
         if (path && (path['x-trace']) && (typeof path['x-trace'] === 'object')) {
             path.trace = path['x-trace'];
