@@ -34,14 +34,14 @@
   "author": "Mike Ralphson <mike.ralphson@gmail.com>",
   "license": "BSD-3-Clause",
   "dependencies": {
-    "better-ajv-errors": "^0.6.1",
+    "better-ajv-errors": "^1.2.0",
     "call-me-maybe": "^1.0.1",
     "node-fetch-h2": "^2.3.0",
     "node-readfiles": "^0.2.0",
     "oas-kit-common": "^1.0.8",
     "oas-resolver": "^2.4.1",
     "oas-schema-walker": "^1.1.4",
-    "oas-validator": "^4.0.6",
+    "oas-validator": "^5.0.8",
     "reftools": "^1.1.3",
     "yaml": "^1.8.3",
     "yargs": "^15.3.1"
